@@ -9,7 +9,7 @@ if __name__ == '__main__':
     with open('elements.json') as fp:
         elements = json.loads(fp.read())
     driver = uc.Chrome(driver_executable_path=ChromeDriverManager().install())
-    driver.get(f'https://www.smythstoys.com/uk/en-gb/brand/jurassic-world/c/SM060614')
+    driver.get('https://www.smythstoys.com/uk/en-gb/brand/jurassic-world/c/SM060614')
     # time.sleep(5)
 
     btn_yes = fnGetElementXpath(driver, False, elements['btn_yes'])
